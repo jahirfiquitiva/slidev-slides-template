@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "silent": true
+  }
+}

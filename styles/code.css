@@ -1,0 +1,167 @@
+@import 'prism-theme-vars/base.css';
+
+:root,
+html:not(.dark),
+.light-mode {
+  --code-font: var(--slidev-code-font-family);
+  --background: #fff;
+  --primary: #f6f9fe;
+  --accent: #3867d6;
+  --text-primary: rgba(9, 17, 34, 0.95);
+  --text-secondary: rgba(9, 17, 34, 0.8);
+  --text-tertiary: rgba(9, 17, 34, 0.5);
+  --divider: rgba(9, 17, 34, 0.12);
+
+  --code-comments: var(--text-tertiary);
+  --code-punctuation: var(--text-secondary);
+  --code-selector: #1a9956;
+  --code-properties: #7a4cbb;
+  --code-operator: #e4873d;
+  --code-function: #aa499d;
+  --code-deleted: #bc2f48;
+
+  --scrollbar-bg-color: var(--background);
+  --scrollbar-thumb-color: var(--text-tertiary);
+}
+
+html:not(.dark),
+html.dark,
+.light-mode,
+.dark-mode {
+  --code-font: var(--slidev-code-font-family);
+  --background: #080f1e;
+  --primary: #080f1e;
+  --accent: #88a4e6;
+  --text-primary: #fff;
+  --text-secondary: rgba(235, 240, 251, 0.85);
+  --text-tertiary: rgba(235, 240, 251, 0.5);
+  --divider: rgba(235, 240, 251, 0.12);
+
+  --code-comments: var(--text-tertiary);
+  --code-punctuation: var(--text-secondary);
+  --code-selector: #26de81;
+  --code-properties: #b77eee;
+  --code-operator: #fed330;
+  --code-function: #f368e0;
+  --code-deleted: #eb3b5a;
+
+  --prism-foreground: var(--text-primary);
+  --prism-background: var(--primary);
+  --prism-comment: var(--code-comments);
+  --prism-string: var(--code-selector);
+  --prism-literal: var(--code-properties);
+  --prism-keyword: var(--accent);
+  --prism-function: var(--code-function);
+  --prism-deleted: var(--code-deleted);
+  --prism-class: var(--code-function);
+  --prism-builtin: var(--code-selector);
+  --prism-property: var(--code-properties);
+  --prism-namespace: var(--code-comments);
+  --prism-punctuation: var(--code-punctuation);
+  --prism-decorator: var(--code-comments);
+  --prism-operator: var(--code-comments);
+  --prism-number: var(--code-operator);
+  --prism-boolean: var(--code-operator);
+  --prism-variable: var(--code-operator);
+  --prism-constant: var(--code-properties);
+  --prism-symbol: var(--code-properties);
+  --prism-selector: var(--code-selector);
+  --prism-regex: var(--code-selector);
+  --prism-json-property: var(--code-operator);
+  --prism-line-number: var(--code-comments);
+}
+
+#slide-content,
+.dark #slide-content {
+  background-color: var(--background);
+}
+
+#slide-content {
+  color: rgba(9, 17, 34, var(--tw-text-opacity));
+}
+
+.dark #slide-content {
+  color: rgba(235, 240, 251, var(--tw-text-opacity));
+}
+
+pre,
+code,
+kbd,
+samp {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: var(--code-font) !important;
+}
+
+pre,
+code {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  overflow-x: auto;
+  padding: 0.8rem;
+  white-space: pre;
+  word-wrap: normal;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+}
+
+.dark pre {
+  background-color: var(--background);
+}
+
+pre pre {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+pre code {
+  border: none;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+code {
+  padding: 0.6rem 0.4rem;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+code[class*='language-'],
+pre[class*='language-'],
+pre[class*='language-'] code,
+.token.imports,
+.token.plain-text {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-bg-color) var(--scrollbar-thumb-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-thumb-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-bg-color);
+  border-radius: 20px;
+  border: 3px solid var(--scrollbar-thumb-color);
+}

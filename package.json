@@ -1,0 +1,24 @@
+{
+  "name": "slidev-slides-template",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "postinstall": "npx playwright install"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.7",
+    "@slidev/theme-default": "*",
+    "prism-theme-vars": "^0.2.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.14.1"
+  }
+}
