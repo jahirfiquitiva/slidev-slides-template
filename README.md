@@ -8,4 +8,8 @@ A template with custom defaults for building slides using [Slidev](https://sli.d
 
 [More layouts](https://sli.dev/builtin/layouts.html)
 
+## Vercel setup
+
+Override the output directory to `dist`. That's it!
+
 *These are the default layouts, listed for reference*
