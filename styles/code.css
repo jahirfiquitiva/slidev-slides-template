@@ -110,6 +110,13 @@ code {
   border: 1px solid var(--divider);
 }
 
+pre,
+.slidev-code {
+  --slidev-code-line-height: 24px;
+  --slidev-code-padding: 0.6rem;
+  padding: 1rem 0.6rem !important;
+}
+
 .dark pre {
   background-color: var(--background);
 }
